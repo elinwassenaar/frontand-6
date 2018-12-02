@@ -1,11 +1,8 @@
-* {
-    border: 2px solid yellow;
-}
-
 body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -15,10 +12,13 @@ body {
     align-items: center;
     background: green;
     height: 7vh;
+    color: white;
+    font-size: 1.3rem;
 }
 
     .site-name {
         margin: 1rem;
+        font-weight: bold;
     }
 
     .navigation {
@@ -30,6 +30,11 @@ body {
         .navigation-list li {
             display: inline;
             margin: 0.2rem;
+        }
+
+        .navigation-list a {
+            color: white;
+            text-decoration: none;
         }
         
 
@@ -43,27 +48,39 @@ body {
         order: 0;
         width: 50vw;
         background: white;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0 1em;
     }
 
-    .sidebar-left {
-        order: -1;
+    .sidebar {
         width: 25vw;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
 
-    .sidebar-right {
-        order: 1;
-        width: 25vw;
-    }
-
-        img {
-            max-width: 100%;    
+        .sidebar h2 {
+            width: 15vw;
         }
 
+        .sidebar img {
+            width: 15vw;
+        }
+
+        .sidebar-left {
+            order: -1;
+        }
+
+        .sidebar-right {
+            order: 1;
+        }
+
+            
 .footer {
     display: flex;
     background: darkred;
     justify-content: center;
+    align-items: center;
+    color: white;
 }
-    .footer p{
-        align-self: center;
-    }
